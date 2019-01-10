@@ -2,7 +2,7 @@
  * @Author: fan.li 
  * @Date: 2019-01-10 15:54:52 
  * @Last Modified by: fan.li
- * @Last Modified time: 2019-01-10 16:26:34
+ * @Last Modified time: 2019-01-10 21:58:30
  * 
  * 相关配置项
  */
@@ -10,8 +10,13 @@
 require('dotenv').config();
 
 module.exports = {
-  END_POINT: 'imm.cn-hangzhou.aliyuncs.com',
   ACCESS_KEY_ID: process.env.ACCESS_KEY_ID,
   ACCESS_KEY_SECRET: process.env.ACCESS_KEY_SECRET,
-  API_VERSION: '2017-09-06',
+  IMM_END_POINT: 'https://imm.cn-beijing.aliyuncs.com/', // 文档转图片
+  IMM_API_VERSION: '2017-09-06',
+  IMM_PROJECT_NAME: 'ym-edu-demo',
+  IMM_TARGET_URI: 'oss://ym-edu-demo/docs/',
+  OSS_END_POINT: 'https://oss-cn-beijing.aliyuncs.com/', // 云存储
+  OSS_BUCKET_NAME: "ym-edu-demo",
+  OSS_REGION: "oss-cn-beijing",
 };
